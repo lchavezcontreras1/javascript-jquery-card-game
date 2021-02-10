@@ -7,7 +7,7 @@ $(document).ready(function (){
 function drawCard(){
     let randomNumber = Math.floor(Math.random()*52)+1;
     let cardImageTag = $("<img>");
-    let srcAddress = `${imageDirectory}/${randomNumber}`;
+    let srcAddress = `${imageDirectory}/${randomNumber}.png`;
     cardImageTag.attr("src", srcAddress);
     cardImageTag.attr("alt", "playing card");
     $("div#playArea").append(cardImageTag);
