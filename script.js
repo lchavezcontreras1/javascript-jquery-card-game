@@ -16,5 +16,5 @@ function drawCard(){
 function discardAllCards(){
     let lastCardDealt = $("div#playArea img:last-child");
     $("div#playArea img").remove();
-    $("div#discardPile").append(lastCardDealt);
+    $("div#discardPile").empty().append(lastCardDealt);
 }
