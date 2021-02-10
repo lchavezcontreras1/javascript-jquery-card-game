@@ -12,14 +12,11 @@ function drawCard(){
     cardImageTag.attr("alt", "playing card");
     $("div#playArea").append(cardImageTag);
     cardImageTag.click(discardOne);
-
 }
 function discardOne(){
     let clickedCard = $(this);
     clickedCard.remove();
     $("div#discardPile").empty().append(clickedCard);
-
-
 }
 function discardAllCards(){
     let lastCardDealt = $("div#playArea img:last-child");
